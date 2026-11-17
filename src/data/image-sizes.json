@@ -1,0 +1,289 @@
+{
+  "hero-balayage-waves": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "balayage-waves-2": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "balayage-waves-3": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "sleek-highlights": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "highlights-blonde": {
+    "w": 780,
+    "h": 1040,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "highlights-straight": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "highlights-honey": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "highlights-contrast": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "copper-highlights": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "copper-bob": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "copper-crop": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "pink-fringe-bob": {
+    "w": 947,
+    "h": 2048,
+    "widths": [
+      480,
+      947
+    ]
+  },
+  "plum-bob": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "black-bob": {
+    "w": 944,
+    "h": 2064,
+    "widths": [
+      480,
+      944
+    ]
+  },
+  "short-taper": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "short-grey": {
+    "w": 944,
+    "h": 2064,
+    "widths": [
+      480,
+      944
+    ]
+  },
+  "undercut-crop": {
+    "w": 944,
+    "h": 2064,
+    "widths": [
+      480,
+      944
+    ]
+  },
+  "pixie-grey": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "glossy-layers": {
+    "w": 944,
+    "h": 2064,
+    "widths": [
+      480,
+      944
+    ]
+  },
+  "curly-blowout": {
+    "w": 947,
+    "h": 2048,
+    "widths": [
+      480,
+      947
+    ]
+  },
+  "defined-curls": {
+    "w": 947,
+    "h": 2048,
+    "widths": [
+      480,
+      947
+    ]
+  },
+  "updo-pins": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "updo-braid": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "outdoor-bob": {
+    "w": 947,
+    "h": 2048,
+    "widths": [
+      480,
+      947
+    ]
+  },
+  "ba-silver-pixie": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-smooth-plum": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-smooth-long": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-smooth-shoulder": {
+    "w": 866,
+    "h": 866,
+    "widths": [
+      480,
+      866
+    ]
+  },
+  "ba-grey-bob": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-auburn-crop": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-black-crop": {
+    "w": 1280,
+    "h": 1280,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "ba-brown-bob": {
+    "w": 866,
+    "h": 866,
+    "widths": [
+      480,
+      866
+    ]
+  },
+  "team-salon": {
+    "w": 640,
+    "h": 1384,
+    "widths": [
+      480,
+      640
+    ]
+  },
+  "team-salon-cheer": {
+    "w": 947,
+    "h": 2048,
+    "widths": [
+      480,
+      947
+    ]
+  },
+  "nails-french": {
+    "w": 1600,
+    "h": 740,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  }
+}

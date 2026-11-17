@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d1513" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <script>
+      // Runs before first paint: mark JS as available (reveal animations are
+      // gated on it), and if we arrived through a page wipe, keep the cover up
+      // until React lifts it. The timeout is a failsafe if the app never loads.
+      (function () {
+        var html = document.documentElement;
+        html.classList.add('js');
+        try {
+          if (sessionStorage.getItem('sl-nav')) {
+            sessionStorage.removeItem('sl-nav');
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              html.classList.add('arriving');
+              setTimeout(function () { html.classList.remove('arriving'); }, 3000);
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!--app-head-->
+  </head>
+  <body>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
