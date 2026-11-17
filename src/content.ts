@@ -37,7 +37,7 @@ export const signatures: Signature[] = [
     id: 'cuts',
     name: ['Cut &', 'Style'],
     photo: 'black-bob',
-    specs: [['Cuts', 'R170 – R200'], ['Pensioners', 'R120, Mon – Thu']],
+    specs: [['Cuts', 'R170 – R200'], ['Pensioners', 'Blow-dry R120, Mon – Thu']],
     href: '/services/#cuts',
     tint: '#3a2f2b',
   },
@@ -77,8 +77,8 @@ export const services: PriceGroup[] = [
     items: [
       {name: 'Cut: short to medium hair', price: 'R170'},
       {name: 'Cut: long hair', price: 'R200'},
-      {name: 'Pensioner cut, Monday to Thursday', price: 'R120'},
-      {name: 'Pensioner cut, Friday & Saturday', price: 'R150'},
+      {name: 'Pensioner blow-dry, Monday to Thursday', price: 'R120'},
+      {name: 'Pensioner blow-dry, Friday & Saturday', price: 'R150'},
       {name: 'Wash & blow-dry', note: 'Prices change with our weekly specials', ask: 'See weekly specials'},
       {name: 'Curls, waves & sets'},
       {name: 'Updos & occasion styling'},
@@ -118,7 +118,7 @@ export const specials: Special[] = [
   {price: 'R750', title: 'Full-head highlights', detail: 'All lengths. Includes a treatment; toner excluded.', photo: 'highlights-blonde'},
   {price: 'R500', title: 'Half-head highlights', detail: 'All lengths. Includes a treatment; toner excluded.', photo: 'highlights-contrast'},
   {price: 'R450 – R750', title: 'Full colour special', detail: 'With a free trim & treatment.', photo: 'copper-bob'},
-  {price: 'R120', title: 'Pensioner cuts', detail: 'Monday to Thursday (R150 on Friday & Saturday).', photo: 'ba-grey-bob'},
+  {price: 'R120', title: 'Pensioner blow-dries', detail: 'Monday to Thursday (R150 on Friday & Saturday).', photo: 'ba-grey-bob'},
 ];
 
 export type Member = {name: string; role: string; bio: string; contact?: {label: string; phone: 'salon' | 'nella' | 'kim'}};

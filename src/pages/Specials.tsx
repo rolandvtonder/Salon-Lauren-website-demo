@@ -11,7 +11,7 @@ export function Specials() {
       <PageHero
         label="Specials"
         lines={[{t: 'Hair'}, {t: 'specials', i: true}]}
-        intro="Full-head highlights, half-head highlights and full colour at special prices, each with a treatment included, R120 pensioner cuts from Monday to Thursday, and new specials every week."
+        intro="Full-head highlights, half-head highlights and full colour at special prices, each with a treatment included, R120 pensioner blow-dries from Monday to Thursday, and new specials every week."
         photo="highlights-honey"
       />
 

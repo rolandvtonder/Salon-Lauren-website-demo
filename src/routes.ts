@@ -36,7 +36,7 @@ export const routes: Route[] = [
     path: '/services/',
     label: 'Services',
     title: 'Hair Services & Prices in Kraaifontein | Salon Lauren',
-    description: 'Cuts, full colour from R450, full-head highlights R750, half-head R500, smoothing treatments and R120 pensioner cuts at Salon Lauren, Kraaifontein.',
+    description: 'Cuts, full colour from R450, full-head highlights R750, half-head R500, smoothing treatments and R120 pensioner blow-dries at Salon Lauren, Kraaifontein.',
     hero: 'balayage-waves-3',
   },
   {
@@ -44,7 +44,7 @@ export const routes: Route[] = [
     path: '/specials/',
     label: 'Specials',
     title: 'Hair Specials & Deals | Salon Lauren Kraaifontein',
-    description: 'Full-head highlights R750, half-head R500, full colour R450–R750 with free trim & treatment, and R120 pensioner cuts Monday to Thursday.',
+    description: 'Full-head highlights R750, half-head R500, full colour R450–R750 with free trim & treatment, and R120 pensioner blow-dries Monday to Thursday.',
     hero: 'highlights-honey',
   },
   {
