@@ -28,7 +28,7 @@ export const routes: Route[] = [
     path: '/',
     label: 'Home',
     title: 'Salon Lauren | Hair & Beauty Salon in Kraaifontein',
-    description: 'Haircuts, colour, highlights, smoothing treatments, blow-dries, nails and waxing at Salon Lauren, Shop 54 Brighton Road, Kraaifontein. Book on WhatsApp.',
+    description: 'Haircuts, colour, highlights, smoothing treatments, blow-dries, nails and waxing at Salon Lauren, 54–56 Brighton Road, Kraaifontein. Book on WhatsApp.',
     hero: 'hero-balayage-waves',
   },
   {
@@ -36,7 +36,7 @@ export const routes: Route[] = [
     path: '/services/',
     label: 'Services',
     title: 'Hair Services & Prices in Kraaifontein | Salon Lauren',
-    description: 'Cuts, full colour from R450, full-head highlights R750, half-head R500, smoothing treatments and pensioner blow-dries at Salon Lauren, Kraaifontein.',
+    description: 'Cuts, full colour from R450, full-head highlights R750, half-head R500, smoothing treatments and R120 pensioner cuts at Salon Lauren, Kraaifontein.',
     hero: 'balayage-waves-3',
   },
   {
@@ -44,7 +44,7 @@ export const routes: Route[] = [
     path: '/specials/',
     label: 'Specials',
     title: 'Hair Specials & Deals | Salon Lauren Kraaifontein',
-    description: 'Full-head highlights R750, half-head R500, full colour R450–R750 with free trim & treatment, and R120 pensioner blow-dries Monday to Thursday.',
+    description: 'Full-head highlights R750, half-head R500, full colour R450–R750 with free trim & treatment, and R120 pensioner cuts Monday to Thursday.',
     hero: 'highlights-honey',
   },
   {
@@ -60,7 +60,7 @@ export const routes: Route[] = [
     path: '/team/',
     label: 'Our team',
     title: 'Meet Our Hairstylists | Salon Lauren Kraaifontein',
-    description: 'Meet the stylists and beauty therapist at Salon Lauren on Brighton Road, Kraaifontein: friendly, experienced hair care for every texture.',
+    description: 'Meet the stylists, nail technician, student stylist and assistant at Salon Lauren, 54–56 Brighton Road, Kraaifontein.',
     hero: 'team-salon',
   },
   {
@@ -76,7 +76,7 @@ export const routes: Route[] = [
     path: '/contact/',
     label: 'Contact',
     title: 'Book & Contact | Salon Lauren, Brighton Rd Kraaifontein',
-    description: 'Book at Salon Lauren: WhatsApp 074 845 7934 or call 076 029 7775. Find us at Shop 54 Brighton Road, Kraaifontein, Cape Town.',
+    description: 'Book at Salon Lauren: WhatsApp 074 845 7934 or call 076 029 7775. Find us at 54–56 Brighton Road, Kraaifontein, Cape Town.',
     hero: 'short-grey',
   },
 ];
@@ -86,7 +86,7 @@ export const notFound: Route = {
   path: '/404',
   label: 'Page not found',
   title: 'Page not found | Salon Lauren',
-  description: 'This page could not be found. Visit Salon Lauren, Shop 54 Brighton Road, Kraaifontein.',
+  description: 'This page could not be found. Visit Salon Lauren, 54–56 Brighton Road, Kraaifontein.',
   hero: 'glossy-layers',
   noindex: true,
 };

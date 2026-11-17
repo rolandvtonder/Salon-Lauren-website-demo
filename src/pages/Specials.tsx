@@ -1,5 +1,5 @@
 import {link} from '../lib/url';
-import {specials} from '../content';
+import {specials, specialsNote} from '../content';
 import {Img} from '../components/Img';
 import {PageHero} from '../components/PageHero';
 import {d} from '../lib/style';
@@ -11,7 +11,7 @@ export function Specials() {
       <PageHero
         label="Specials"
         lines={[{t: 'Hair'}, {t: 'specials', i: true}]}
-        intro="Full-head highlights, half-head highlights and full colour at special prices, each with a treatment included, plus R120 pensioner blow-dries from Monday to Thursday."
+        intro="Full-head highlights, half-head highlights and full colour at special prices, each with a treatment included, R120 pensioner cuts from Monday to Thursday, and new specials every week."
         photo="highlights-honey"
       />
 
@@ -37,6 +37,25 @@ export function Specials() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="on-paper bg-lavender px-5 py-20 text-ink md:px-14 md:py-24" aria-labelledby="weekly">
+        <div className="mx-auto flex max-w-[1680px] flex-wrap items-end justify-between gap-8" data-reveal>
+          <div className="max-w-[60ch]">
+            <h2 id="weekly" className="display text-[clamp(40px,5vw,84px)]">
+              {specialsNote.title.split(' ').slice(0, 2).join(' ')} <span className="it">{specialsNote.title.split(' ').slice(2).join(' ')}</span>
+            </h2>
+            <p className="mt-5 text-[17px] text-ink/85">{specialsNote.body}</p>
+          </div>
+          <a
+            href={whatsapp(site.phones.nella.intl, "Hi Salon Lauren, what specials are on this week?")}
+            target="_blank"
+            rel="noopener"
+            className="btn bg-ink text-paper hover:bg-mocha hover:text-paper"
+          >
+            Ask what’s on · {site.phones.nella.display}
+          </a>
+        </div>
       </section>
 
       <section className="on-paper bg-paper px-5 py-24 text-ink md:px-14 md:py-32" aria-labelledby="good-to-know">

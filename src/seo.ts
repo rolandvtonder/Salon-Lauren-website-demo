@@ -116,7 +116,7 @@ export function headFor(route: Route): string {
     `<meta property="og:image" content="${abs('/og-image.jpg')}" />`,
     `<meta property="og:image:width" content="1200" />`,
     `<meta property="og:image:height" content="630" />`,
-    `<meta property="og:image:alt" content="Salon Lauren, hair &amp; beauty salon, Shop 54 Brighton Road, Kraaifontein" />`,
+    `<meta property="og:image:alt" content="Salon Lauren, hair &amp; beauty salon, 54–56 Brighton Road, Kraaifontein" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="geo.region" content="ZA-WC" />`,
     `<meta name="geo.placename" content="${esc(`${site.address.suburb}, ${site.address.city}`)}" />`,

@@ -61,7 +61,7 @@ export function Footer() {
           </ul>
         </nav>
       </div>
-      <p className="caps mx-auto mt-16 max-w-[1680px] text-paper/60">© 2026 Salon Lauren · Shop 54 Brighton Road, Kraaifontein · Bookings are essential</p>
+      <p className="caps mx-auto mt-16 max-w-[1680px] text-paper/60">© 2026 Salon Lauren · 54–56 Brighton Road, Kraaifontein · Bookings are essential</p>
     </footer>
   );
 }

@@ -1,12 +1,13 @@
 /**
  * All page copy lives here, so prices and wording can be changed in one place.
- * Prices come from the salon's own flyers and Facebook posts. A service with no
- * `price` shows "Ask for a quote". TODO(launch): add those prices when ready.
+ * Prices come from the salon (cut prices and trading hours confirmed Nov 2026)
+ * and its flyers. A service with no `price` shows "Ask for a quote"; `ask`
+ * replaces that text (e.g. for services that are priced through weekly specials).
  */
 
 export type Line = {t: string; i?: boolean};
 
-export type PriceItem = {name: string; note?: string; price?: string};
+export type PriceItem = {name: string; note?: string; price?: string; ask?: string};
 
 export type PriceGroup = {id: string; title: Line[]; intro: string; photo: string; items: PriceItem[]};
 
@@ -36,7 +37,7 @@ export const signatures: Signature[] = [
     id: 'cuts',
     name: ['Cut &', 'Style'],
     photo: 'black-bob',
-    specs: [['For', 'Every length & texture'], ['Pensioners', 'Blow-dry R120, Mon – Thu']],
+    specs: [['Cuts', 'R170 – R200'], ['Pensioners', 'R120, Mon – Thu']],
     href: '/services/#cuts',
     tint: '#3a2f2b',
   },
@@ -62,7 +63,7 @@ export const about = {
   kicker: 'Welcome to Salon Lauren',
   lines: [{t: 'Hair care'}, {t: '& treatment,', i: true}, {t: 'done with heart.'}] as Line[],
   body: [
-    "Salon Lauren is a neighbourhood hair and beauty salon at Shop 54, Brighton Road in Kraaifontein. Our stylists work with every hair type — fine, thick, curly, coily, relaxed or colour-treated — and we take the time to get it right.",
+    "Salon Lauren is a neighbourhood hair and beauty salon at 54–56 Brighton Road in Kraaifontein. Our stylists work with every hair type — fine, thick, curly, coily, relaxed or colour-treated — and we take the time to get it right.",
     'Under the same roof, L. Beauty offers gel nails, pedicures, waxing, lash lifts and massages, so you can leave looking and feeling your best.',
   ],
 };
@@ -74,10 +75,11 @@ export const services: PriceGroup[] = [
     intro: 'Precision cuts, tapers and bobs, finished with a professional blow-dry or set.',
     photo: 'black-bob',
     items: [
-      {name: "Ladies' cut & blow-dry"},
-      {name: 'Wash & blow-dry'},
-      {name: 'Pensioner blow-dry', note: 'Monday to Thursday', price: 'R120'},
-      {name: 'Short cuts, tapers & pixies'},
+      {name: 'Cut: short to medium hair', price: 'R170'},
+      {name: 'Cut: long hair', price: 'R200'},
+      {name: 'Pensioner cut, Monday to Thursday', price: 'R120'},
+      {name: 'Pensioner cut, Friday & Saturday', price: 'R150'},
+      {name: 'Wash & blow-dry', note: 'Prices change with our weekly specials', ask: 'See weekly specials'},
       {name: 'Curls, waves & sets'},
       {name: 'Updos & occasion styling'},
     ],
@@ -92,7 +94,7 @@ export const services: PriceGroup[] = [
       {name: 'Full-head highlights', note: 'All lengths. Includes treatment, toner excluded', price: 'R750'},
       {name: 'Half-head highlights', note: 'All lengths. Includes treatment, toner excluded', price: 'R500'},
       {name: 'Toner & gloss'},
-      {name: 'Root touch-up'},
+      {name: 'Root touch-up', note: 'Prices change with our weekly specials', ask: 'See weekly specials'},
       {name: 'Fashion colour', note: 'Pinks, plums, coppers'},
     ],
   },
@@ -116,19 +118,28 @@ export const specials: Special[] = [
   {price: 'R750', title: 'Full-head highlights', detail: 'All lengths. Includes a treatment; toner excluded.', photo: 'highlights-blonde'},
   {price: 'R500', title: 'Half-head highlights', detail: 'All lengths. Includes a treatment; toner excluded.', photo: 'highlights-contrast'},
   {price: 'R450 – R750', title: 'Full colour special', detail: 'With a free trim & treatment.', photo: 'copper-bob'},
-  {price: 'R120', title: 'Pensioner blow-dry', detail: 'Monday to Thursday.', photo: 'ba-grey-bob'},
+  {price: 'R120', title: 'Pensioner cuts', detail: 'Monday to Thursday (R150 on Friday & Saturday).', photo: 'ba-grey-bob'},
 ];
 
 export type Member = {name: string; role: string; bio: string; contact?: {label: string; phone: 'salon' | 'nella' | 'kim'}};
 
-// TODO(launch): check names, roles and bios with the team; add portraits by
-// listing a `photo` slug here and in src/data/photos.json.
+// Job titles confirmed by the salon (Nov 2026). TODO: add portraits by listing
+// a `photo` slug here and in src/data/photos.json.
 export const team: Member[] = [
-  {name: 'Lauren', role: 'Owner & stylist', bio: 'Lauren built Salon Lauren on honest advice and beautiful, easy-to-wear hair. Ask her about cuts, colour and smoothing.'},
-  {name: 'Nella', role: 'Hairstylist · bookings', bio: 'Nella looks after the diary. WhatsApp her to book or to ask about this month’s specials.', contact: {label: 'WhatsApp Nella', phone: 'nella'}},
-  {name: 'Zelda', role: 'Hairstylist', bio: 'Our newest stylist — please join us in giving Zelda a warm welcome to Salon Lauren.'},
-  {name: 'Kim', role: 'L. Beauty · nails, waxing, lashes & massage', bio: 'Kim runs L. Beauty from the salon: gel nails, pedicures, waxing, lash lifts and massages.', contact: {label: 'WhatsApp Kim', phone: 'kim'}},
+  {name: 'Lauren', role: 'Owner & stylist', bio: 'Lauren owns and runs Salon Lauren, and works alongside the team on cuts, colour and treatments.'},
+  {name: 'Nella', role: 'Stylist', bio: 'Nella also looks after bookings. WhatsApp her to book or to ask about this week’s specials.', contact: {label: 'WhatsApp Nella', phone: 'nella'}},
+  {name: 'Zelda', role: 'Stylist', bio: 'Our newest stylist. Please join us in giving Zelda a warm welcome to Salon Lauren.'},
+  {name: 'Kim', role: 'Nail technician · L. Beauty', bio: 'Kim runs L. Beauty from the salon: gel nails, pedicures, waxing, lash lifts and massages.', contact: {label: 'WhatsApp Kim', phone: 'kim'}},
 ];
+
+/** The rest of the team, shown under the cards. */
+export const teamAlso = 'Our stylists are supported by a third-year student stylist and a salon assistant, so there’s always someone to welcome you.';
+
+/** Specials change weekly and are announced on WhatsApp status. */
+export const specialsNote = {
+  title: 'New specials every week',
+  body: 'We post this week’s specials, including blow-dries and root touch-ups, on our WhatsApp status. Save our number to see them first, or message us to ask what’s on.',
+};
 
 export const beauty = {
   intro: 'Ready to turn hands into masterpieces? Gel nails, pedicures, waxing, lash lifts and massages — your dream nails are just one appointment away.',

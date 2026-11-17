@@ -16,7 +16,9 @@ export const site = {
   name: 'Salon Lauren',
   tagline: 'Hair & Beauty Salon',
   address: {
-    street: 'Shop 54, Brighton Road',
+    street: '54–56 Brighton Road',
+    /** What Google Maps is searched for (the pin lands on no. 54). */
+    mapQuery: '54 Brighton Road, Kraaifontein, 7570',
     suburb: 'Kraaifontein',
     city: 'Cape Town',
     region: 'Western Cape',
@@ -31,20 +33,20 @@ export const site = {
   facebook: 'https://www.facebook.com/p/Salon-Lauren-100039893964206/',
   priceRange: 'R80 – R750',
 
-  // TODO(launch): replace with the real opening hours, then set
-  // hoursConfirmed to true so they are also published to Google.
-  hoursConfirmed: false,
+  // Trading hours confirmed by the salon (November 2026). While true, they are
+  // also published to Google in the structured data.
+  hoursConfirmed: true,
   hours: [
-    {days: 'Monday – Friday', time: '08:30 – 17:30', spec: {days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '17:30'}},
-    {days: 'Saturday', time: '08:00 – 13:00', spec: {days: ['Saturday'], opens: '08:00', closes: '13:00'}},
-    {days: 'Sunday & public holidays', time: 'Closed', spec: null},
+    {days: 'Monday – Friday', time: '08:00 – 18:00', spec: {days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '18:00'}},
+    {days: 'Saturday', time: '08:00 – 16:00', spec: {days: ['Saturday'], opens: '08:00', closes: '16:00'}},
+    {days: 'Sunday', time: 'Closed', spec: null},
   ],
 };
 
 export const fullAddress = `${site.address.street}, ${site.address.suburb}, ${site.address.city}, ${site.address.postal}`;
 
-export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Salon Lauren, ${site.address.street}, ${site.address.suburb}`)}`;
-export const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(`${site.address.street}, ${site.address.suburb}, ${site.address.postal}`)}&output=embed`;
+export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address.mapQuery)}`;
+export const mapsEmbed = `https://www.google.com/maps?q=${encodeURIComponent(site.address.mapQuery)}&output=embed`;
 
 export const whatsapp = (intl: string, text = "Hi Salon Lauren, I'd like to book an appointment.") =>
   `https://wa.me/${intl.replace('+', '')}?text=${encodeURIComponent(text)}`;

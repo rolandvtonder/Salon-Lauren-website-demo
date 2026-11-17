@@ -1,5 +1,5 @@
 import {link} from '../lib/url';
-import {team} from '../content';
+import {team, teamAlso} from '../content';
 import {Img} from '../components/Img';
 import {PageHero} from '../components/PageHero';
 import {d} from '../lib/style';
@@ -44,6 +44,9 @@ export function Team() {
               </li>
             ))}
           </ul>
+          <p className="mt-10 max-w-[60ch] text-[17px] text-ink/80" data-reveal>
+            {teamAlso}
+          </p>
         </div>
       </section>
 

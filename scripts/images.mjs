@@ -50,7 +50,7 @@ const text = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="600" he
   <text x="64" y="270" font-family="Georgia, 'Times New Roman', serif" font-size="78" letter-spacing="6" fill="#f7f1ec">SALON</text>
   <text x="64" y="350" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-style="italic" letter-spacing="6" fill="#c9a492">LAUREN</text>
   <text x="66" y="420" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="4" fill="#d9cdd8">HAIR &amp; BEAUTY SALON</text>
-  <text x="66" y="456" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2.5" fill="#f7f1ec" fill-opacity="0.7">SHOP 54 BRIGHTON ROAD · KRAAIFONTEIN</text>
+  <text x="66" y="456" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2.5" fill="#f7f1ec" fill-opacity="0.7">54–56 BRIGHTON ROAD · KRAAIFONTEIN</text>
 </svg>`);
 await sharp({create: {width: 1200, height: 630, channels: 3, background: '#1d1513'}})
   .composite([...tiles, {input: text, left: 0, top: 0}])

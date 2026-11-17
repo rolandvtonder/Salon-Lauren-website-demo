@@ -1,6 +1,6 @@
 # Salon Lauren — website
 
-Seven-page website for Salon Lauren, a hair and beauty salon at Shop 54, Brighton Road, Kraaifontein.
+Seven-page website for Salon Lauren, a hair and beauty salon at 54–56 Brighton Road, Kraaifontein.
 
 **Live demo:** https://rolandvtonder.github.io/Salon-Lauren-website-demo/
 
