@@ -41,7 +41,7 @@ export function Home() {
             </div>
           </div>
           <div className="relative" data-reveal style={d(1)}>
-            <Img name="team-salon" sizes="(max-width: 767px) 90vw, 40vw" className="aspect-[4/5] w-full object-cover" />
+            <Img name="highlights-blonde" sizes="(max-width: 767px) 90vw, 40vw" className="aspect-[4/5] w-full object-cover" />
             <Img
               name="glossy-layers"
               sizes="(max-width: 767px) 40vw, 16vw"
@@ -108,10 +108,10 @@ export function Home() {
               L. <span className="it">Beauty</span>
             </h2>
             <p className="mt-6 max-w-[42ch] text-[17px] text-paper/85">
-              Gel nails from R180, pedicures, waxing from R80, lash lifts and relaxing massages: everything you need under one roof.
+              Gel nails from R180, pedicures and relaxing massages: everything you need under one roof.
             </p>
             <a href={link('/l-beauty/')} className="btn mt-8 self-start">
-              Nails, waxing & lashes <span aria-hidden>→</span>
+              Nails & pedicures <span aria-hidden>→</span>
             </a>
           </div>
         </div>

@@ -7,7 +7,7 @@ export function Contact() {
   const ways = [
     {label: 'WhatsApp Nella', sub: 'Fastest way to book', value: site.phones.nella.display, href: bookingUrl, external: true},
     {label: 'Call the salon', sub: 'During opening hours', value: site.phones.salon.display, href: `tel:${site.phones.salon.intl}`},
-    {label: 'L. Beauty (Kim)', sub: 'Nails, waxing, lashes & massage', value: site.phones.kim.display, href: `tel:${site.phones.kim.intl}`},
+    {label: 'L. Beauty (Kim)', sub: 'Gel nails, pedicures & massage', value: site.phones.kim.display, href: `tel:${site.phones.kim.intl}`},
     {label: 'Facebook', sub: 'News, specials & photos', value: 'Salon Lauren', href: site.facebook, external: true},
   ];
 

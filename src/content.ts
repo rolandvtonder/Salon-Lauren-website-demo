@@ -64,7 +64,7 @@ export const about = {
   lines: [{t: 'Hair care'}, {t: '& treatment,', i: true}, {t: 'done with heart.'}] as Line[],
   body: [
     "Salon Lauren is a neighbourhood hair and beauty salon at 54–56 Brighton Road in Kraaifontein. Our stylists work with every hair type — fine, thick, curly, coily, relaxed or colour-treated — and we take the time to get it right.",
-    'Under the same roof, L. Beauty offers gel nails, pedicures, waxing, lash lifts and massages, so you can leave looking and feeling your best.',
+    'Under the same roof, L. Beauty offers gel nails, pedicures and massages, so you can leave looking and feeling your best.',
   ],
 };
 
@@ -129,7 +129,7 @@ export const team: Member[] = [
   {name: 'Lauren', role: 'Owner & stylist', bio: 'Lauren owns and runs Salon Lauren, and works alongside the team on cuts, colour and treatments.'},
   {name: 'Nella', role: 'Stylist', bio: 'Nella also looks after bookings. WhatsApp her to book or to ask about this week’s specials.', contact: {label: 'WhatsApp Nella', phone: 'nella'}},
   {name: 'Zelda', role: 'Stylist', bio: 'Our newest stylist. Please join us in giving Zelda a warm welcome to Salon Lauren.'},
-  {name: 'Kim', role: 'Nail technician · L. Beauty', bio: 'Kim runs L. Beauty from the salon: gel nails, pedicures, waxing, lash lifts and massages.', contact: {label: 'WhatsApp Kim', phone: 'kim'}},
+  {name: 'Kim', role: 'Nail technician · L. Beauty', bio: 'Kim runs L. Beauty from the salon: gel nails, pedicures and massages.', contact: {label: 'WhatsApp Kim', phone: 'kim'}},
 ];
 
 /** The rest of the team, shown under the cards. */
@@ -142,7 +142,7 @@ export const specialsNote = {
 };
 
 export const beauty = {
-  intro: 'Ready to turn hands into masterpieces? Gel nails, pedicures, waxing, lash lifts and massages — your dream nails are just one appointment away.',
+  intro: 'Ready to turn hands into masterpieces? Gel nails, pedicures and massages — your dream nails are just one appointment away.',
   groups: [
     {
       id: 'nails',
@@ -154,29 +154,6 @@ export const beauty = {
         {name: 'Soak-off', price: 'R80'},
         {name: 'Pedicure with gel', price: 'R300'},
         {name: 'Pedicure without gel polish'},
-      ],
-    },
-    {
-      id: 'waxing',
-      title: [{t: 'Waxing'}],
-      items: [
-        {name: 'Brow wax', price: 'R80'},
-        {name: 'Lip wax', price: 'R80'},
-        {name: 'Chin wax', price: 'R80'},
-        {name: 'Underarm wax', price: 'R180'},
-        {name: 'Half-leg wax', price: 'R150'},
-        {name: 'Full-leg wax', price: 'R250'},
-        {name: 'Bikini wax', price: 'R150'},
-        {name: 'Brazilian wax', price: 'R280'},
-        {name: 'Hollywood wax', price: 'R350'},
-      ],
-    },
-    {
-      id: 'lashes',
-      title: [{t: 'Lashes'}, {t: '& brows', i: true}],
-      items: [
-        {name: 'Lash lift with tint', price: 'R260'},
-        {name: 'Tint', price: 'R80'},
       ],
     },
     {

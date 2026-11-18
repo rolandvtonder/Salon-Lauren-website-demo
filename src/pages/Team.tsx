@@ -11,8 +11,8 @@ export function Team() {
       <PageHero
         label="Our team"
         lines={[{t: 'Meet'}, {t: 'the team', i: true}]}
-        intro="Friendly, experienced stylists who listen first, and a beauty therapist for nails, waxing and lashes. Come and say hello on Brighton Road."
-        photo="team-salon"
+        intro="Friendly, experienced stylists who listen first, and a nail technician for gel nails and pedicures. Come and say hello on Brighton Road."
+        photo="highlights-blonde"
       />
 
       <section className="on-paper bg-paper px-5 py-24 text-ink md:px-14 md:py-32" aria-labelledby="team-title">
@@ -52,7 +52,7 @@ export function Team() {
 
       <section className="bg-ink" aria-label="The team at the salon">
         <div className="grid gap-[3px] md:grid-cols-2">
-          <Img name="team-salon-cheer" sizes="(max-width: 767px) 100vw, 50vw" className="aspect-[4/5] w-full object-cover md:aspect-[3/4]" />
+          <Img name="outdoor-bob" sizes="(max-width: 767px) 100vw, 50vw" className="aspect-[4/5] w-full object-cover md:aspect-[3/4]" />
           <div className="flex flex-col justify-center px-5 py-20 md:px-16" data-reveal>
             <p className="display text-[clamp(40px,4.6vw,80px)]">
               Good hair, <span className="it text-latte">good company.</span>

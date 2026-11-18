@@ -28,7 +28,7 @@ export const routes: Route[] = [
     path: '/',
     label: 'Home',
     title: 'Salon Lauren | Hair & Beauty Salon in Kraaifontein',
-    description: 'Haircuts, colour, highlights, smoothing treatments, blow-dries, nails and waxing at Salon Lauren, 54–56 Brighton Road, Kraaifontein. Book on WhatsApp.',
+    description: 'Haircuts, colour, highlights, smoothing treatments, blow-dries, nails and pedicures at Salon Lauren, 54–56 Brighton Road, Kraaifontein. Book on WhatsApp.',
     hero: 'hero-balayage-waves',
   },
   {
@@ -61,14 +61,14 @@ export const routes: Route[] = [
     label: 'Our team',
     title: 'Meet Our Hairstylists | Salon Lauren Kraaifontein',
     description: 'Meet the stylists, nail technician, student stylist and assistant at Salon Lauren, 54–56 Brighton Road, Kraaifontein.',
-    hero: 'team-salon',
+    hero: 'highlights-blonde',
   },
   {
     id: 'beauty',
     path: '/l-beauty/',
     label: 'L. Beauty',
-    title: 'Nails, Waxing & Lashes | L. Beauty at Salon Lauren',
-    description: 'Gel nails from R180, pedicures, waxing from R80, lash lift & tint R260 and massages from R150 with L. Beauty at Salon Lauren, Kraaifontein.',
+    title: 'Gel Nails, Pedicures & Massage | L. Beauty at Salon Lauren',
+    description: 'Gel polish from R180, gel tips, pedicures from R300 and massages from R150 with L. Beauty at Salon Lauren, 54–56 Brighton Road, Kraaifontein.',
     hero: 'nails-french',
   },
   {

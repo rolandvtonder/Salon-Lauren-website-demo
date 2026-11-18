@@ -23,7 +23,7 @@ function business(withCatalog = false) {
     '@type': 'HairSalon',
     '@id': `${site.url}/#salon`,
     name: site.name,
-    description: 'Hair and beauty salon in Kraaifontein offering haircuts, colour, highlights, smoothing treatments, blow-dries, nails, waxing, lashes and massage.',
+    description: 'Hair and beauty salon in Kraaifontein offering haircuts, colour, highlights, smoothing treatments, blow-dries, gel nails, pedicures and massage.',
     url: abs('/'),
     image: abs('/og-image.jpg'),
     logo: abs('/apple-touch-icon.png'),
@@ -71,7 +71,7 @@ function business(withCatalog = false) {
         })),
         {
           '@type': 'OfferCatalog',
-          name: 'L. Beauty: nails, waxing, lashes & massage',
+          name: 'L. Beauty: nails, pedicures & massage',
           itemListElement: beauty.groups.flatMap((g) => g.items.map((i) => offer(i.name, i.price, i.note))),
         },
       ],
